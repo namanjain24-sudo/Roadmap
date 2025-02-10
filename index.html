@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StackBlitz Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <!-- Left section with logo and nav -->
+          <div class="left-section">
+            <!-- Logo -->
+            <div class="logo">
+              <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+              <svg class="home-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="main-nav">
+              <a href="#" class="nav-link">Start Here</a>
+              <div class="nav-item">
+                <a href="#" class="nav-link">Roadmaps</a>
+                <svg class="map-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <a href="#" class="nav-link">Teams</a>
+              <div class="nav-item">
+                <a href="#" class="nav-link">Changelog</a>
+                <div class="blue-dot"></div>
+              </div>
+            </nav>
+          </div>
+
+          <!-- Right section with auth buttons -->
+          <div class="auth-buttons">
+            <button class="theme-toggle" aria-label="Toggle theme">
+              <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+              <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            </button>
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="heading">
+      <h1>Developer Roadmaps</h1>
+    </div>
+  <div class="slogan">
+    <p>
+      A structured platform designed to craft roadmaps, guides, and learning resources—helping <br>developers navigate their journey with clarity and purpose."
+    </p>
+  </div>
+  <div class="heading-container">
+    <span class="heading-box">Beginner Roadmaps</span>
+  </div>
+  <div class="container">
+    <h1 class="hed1">Are you an Absolute beginner?</h1>
+    <p class="subtitle">  Here are some beginner friendly roadmaps you should start with.</p>
+    
+    <div class="cards-container">
+        <div class="card">
+            <div class="icon">🌐</div>
+            <h2>Frontend Developer</h2>
+            <p>Develop the part of web apps that users interact with i.e. things rendered in the browser.</p>
+            <div class="arrow">↗</div>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚙️</div>
+            <h2>Backend Developer</h2>
+            <p>Develop the part hidden from the user e.g. things like APIs, databases, search engines etc.</p>
+            <div class="arrow">↗</div>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔄</div>
+            <h2>Full Stack Developer</h2>
+            <p>Develop both the frontend and backend side of the web apps i.e. the whole development stack.</p>
+            <div class="arrow">↗</div>
+        </div>
+    </div>
+
+    <p class="footer-text">
+        There is also a <a href="#">beginner DevOps roadmap</a> which requires you to have some backend knowledge and entails a lot of operations work i.e. deploying, scaling, monitoring, and maintaining applications.
+    </p>
+</div>
+  
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
