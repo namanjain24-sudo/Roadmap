@@ -227,7 +227,7 @@ html[data-theme="light"] .moon-icon {
 .heading-container::after {
   content: "";
   flex: 1;
-  height: 1px;
+  height: 3px;
   background: #444; /* Adjust color for visibility */
 }
 
@@ -236,7 +236,7 @@ html[data-theme="light"] .moon-icon {
   background: #1a1a2e; /* Dark background */
   color: #ccc; /* Text color */
   border-radius: 8px; /* Rounded corners */
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   border: 1px solid #444; /* Border for the box */
   margin: 115px 10px;
@@ -369,12 +369,11 @@ h2 {
   color: #b8b9bb;
   line-height: 1.7;
   font-size: 1.1rem;
-  max-width: 800px;
+
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
   border-radius: 1rem;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .footer-text a {
@@ -405,6 +404,89 @@ h2 {
 .footer-text a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+.contain{
+  max-width: 1000px;
+  width: 100%;
+  margin: -80px auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  gap: 0.75rem;
+}
+
+.course {
+  background-color: var(--bg-secondary);
+  color: var(--text);
+  padding: 0.1rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  min-height: 3.5rem;
+}
+
+.course:hover {
+  background-color: var(--hover);
+  transform: translateY(-2px);
+
+  border: 2px solid var(--border-color);
+}
+.create {
+  border: 2px dashed var(--text-secondary);
+  background-color: transparent;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+.create:hover {
+  opacity: 1;
+  background-color: transparent;
+}
+.badge {
+  position: absolute;
+  right: 0.75rem;
+  background-color: var(--badge);
+  color:var(--text-secondary);
+  padding: 0.15rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+
+  .contain {
+      max-width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* Set 3 columns */
+    gap: 0.5rem;
+    padding: 0.1rem;}
+
+  .course {
+      padding: 0.75rem 1rem;
+      min-height: 3rem;
+      font-size: 0.9rem;
+  }
+
+  .create {
+    border: 2px dashed var(--text);
+    background-color: transparent;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+  .badge {
+      padding: 0.1rem 0.4rem;
+      font-size: 0.7rem;
+      right: 0.5rem;
+  }
 }
 
 @media (max-width: 768px) {
