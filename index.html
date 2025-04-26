@@ -15,24 +15,33 @@
           <div class="left-section">
             <!-- Logo -->
             <div class="logo">
-              <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-              <svg class="home-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            </div>
-            
+                <a href="menu.html" class="menu-link">
+                  <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" x2="20" y1="12" y2="12"/>
+                    <line x1="4" x2="20" y1="6" y2="6"/>
+                    <line x1="4" x2="20" y1="18" y2="18"/>
+                  </svg>
+                </a>
+                <a href="index.html" class="home-link">
+                  <svg class="home-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9 22 9 12 15 12 15 22"/>
+                  </svg>
+                </a>
+              </div>
             <!-- Navigation -->
             <nav class="main-nav">
-              <a href="#" class="nav-link">Start Here</a>
               <div class="nav-item">
-                <a href="#" class="nav-link">Roadmaps</a>
+                <a href="#" class="nav-link">Project Ideas</a>
                 <svg class="map-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <a href="team.html" class="nav-link">Teams</a>
               <div class="nav-item">
-                <a href="#" class="nav-link">Web Dev</a>
+                <a href="#" class="nav-link">Roadmap</a>
                 <div class="blue-dot"></div>
               </div>
               <div class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="interview.html" class="nav-link">
                   Interview Prep</a>
                 <div class="blue-dot"></div>
               </div>
@@ -75,27 +84,28 @@
     <p class="subtitle">  Here are some beginner friendly roadmaps you should start with.</p>
     
     <div class="cards-container">
-        <div class="card">
-            <div class="icon">🌐</div>
-            <h2 class="h2">Frontend Developer</h2>
-            <p>Develop the part of web apps that users interact with i.e. things rendered in the browser.</p>
-            <div class="arrow">↗</div>
-        </div>
-
-        <div class="card">
-            <div class="icon">⚙️</div>
-            <h2 class="h2">Backend Developer</h2>
-            <p>Develop the part hidden from the user e.g. things like APIs, databases, search engines etc.</p>
-            <div class="arrow">↗</div>
-        </div>
-
-        <div class="card">
-            <div class="icon">🔄</div>
-            <h2 class="h2">Full Stack Developer</h2>
-            <p>Develop both the frontend and backend side of the web apps i.e. the whole development stack.</p>
-            <div class="arrow">↗</div>
-        </div>
-    </div>
+      <a href="https://roadmap.sh/frontend?r=frontend-beginner" class="card">
+          <div class="icon">🌐</div>
+          <h2 class="h2">Frontend Developer</h2>
+          <p>Develop the part of web apps that users interact with i.e. things rendered in the browser.</p>
+          <div class="arrow">↗</div>
+      </a>
+  
+      <a href="https://roadmap.sh/backend?r=backend-beginner" class="card">
+          <div class="icon">⚙️</div>
+          <h2 class="h2">Backend Developer</h2>
+          <p>Develop the part hidden from the user e.g. things like APIs, databases, search engines etc.</p>
+          <div class="arrow">↗</div>
+      </a>
+  
+      <a href="https://roadmap.sh/full-stack" class="card">
+          <div class="icon">🔄</div>
+          <h2 class="h2">Full Stack Developer</h2>
+          <p>Develop both the frontend and backend side of the web apps i.e. the whole development stack.</p>
+          <div class="arrow">↗</div>
+      </a>
+  </div>
+  
 
     <p class="footer-text">
         There is also a <a href="#">beginner DevOps roadmap</a> which requires you to have some backend knowledge and entails a lot of operations work i.e. deploying, scaling, monitoring, and maintaining applications.
@@ -121,7 +131,7 @@
     <a href="https://project-genie.streamlit.app/">
         <button class="portal-btn supernova">Get Started →</button>
     </a>
-    <a href="https://project-genie-ebon.vercel.app/#demo">
+    <a href="projectgenie.vercel.app">
         <button class="portal-btn blackhole">View Demo</button>
     </a>
 </div>
@@ -145,30 +155,21 @@
             <span class="badge">New</span>
         </a>
         <a href="https://roadmap.sh/data-analyst" class="course">Data Analyst</a>
-        
         <a href="https://roadmap.sh/ai-data-scientist" class="course">AI and Data Scientist</a>
         <a href="https://roadmap.sh/android" class="course">Android</a>
         <a href="https://roadmap.sh/ios" class="course">iOS</a>
-        
         <a href="https://roadmap.sh/postgresql-dba" class="course">PostgreSQL</a>
         <a href="https://roadmap.sh/blockchain" class="course">Blockchain</a>
         <a href="https://roadmap.sh/qa" class="course">QA</a>
-        
         <a href="https://roadmap.sh/software-architect" class="course">Software Architect</a>
         <a href="https://roadmap.sh/cyber-security" class="course">Cyber Security</a>
         <a href="https://roadmap.sh/ux-design" class="course">UX Design</a>
-        
         <a href="https://roadmap.sh/game-developer" class="course">Game Developer</a>
         <a href="https://roadmap.sh/technical-writer" class="course">Technical Writer</a>
         <a href="https://roadmap.sh/mlops" class="course">MLOps</a>
-        
         <a href="https://roadmap.sh/product-manager" class="course">Product Manager</a>
-        <a href="https://roadmap.sh/engineering-manager" class="course">
-            Engineering Manager
-        </a>
+        <a href="https://roadmap.sh/engineering-manager" class="course">Engineering Manager</a>
         <a href="https://roadmap.sh/devrel" class="course">Developer Relations</a>
-        
-        <a href="#create" class="course create">+ Create your own Roadmap</a>
     </div>
 </div>
 <div class="heading-container">
@@ -225,25 +226,11 @@
       </a>
       <a href="https://roadmap.sh/linux" class="course">Linux</a>
       <a href="https://roadmap.sh/terraform" class="course">Terraform</a>
-      
-      <a href="https://roadmap.sh/redis" class="course">Redis</a>
-      
-      <a href="#create" class="course create">+ Create your own Roadmap</a>
+      <a href="https://www.lucidchart.com/pages" class="course create">+ Create your own Roadmap</a>
   </div>
 </div>
-<div class="heading-container">
-  <span class="heading-box">Project Ideas</span>
 
-</div>
-<div class="contain">
-<div class="grid">
-<a href="#developer-relations" class="course">Frontend Developer</a>
-      <a href="#mlops" class="course">Backend</a>
-      
-      <a href="#product-manager" class="course">DevOps</a>
-    </div>
-  </div>
-  <div class="heading-container">
+  <!-- <div class="heading-container">
     <span class="heading-box">Best Practices</span>
   
   </div>
@@ -279,9 +266,9 @@
       <div class="heading-container">
         <span class="heading-box">Resources</span>
       
-      </div>
+      </div> -->
   <div class="videos">
-    <h1 class="Video">"Videos"</h1>
+    <h1 class="Video">"Best Youtube Channels For" <BR>"Software Developers"</h1>
     <ul class="video-list">
       <li>
         <a href="#" class="video-title">YAML in Depth</a>
@@ -382,6 +369,9 @@
         <a href="#">Terms</a>
         <a href="#">Privacy</a>
         <a href="#">Advertise</a>
+      </div>
+      <div>
+        Made with ❤️ by <span><a href="https://github.com/namanjain24-sudo" style="text-decoration: none; color:inherit;"> Naman Jain</a></span>
       </div>
       <div class="social-links">
         <a href="#" class="social-link">Email</a>

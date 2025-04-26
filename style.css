@@ -52,8 +52,6 @@ header {
   align-items: center;
   height: 34px;
 }
-
-/* Left section styles */
 .left-section {
   display: flex;
   align-items: center;
@@ -73,8 +71,6 @@ header {
 .home-icon {
   color: var(--text-primary);
 }
-
-/* Navigation styles */
 .main-nav {
   display: flex;
   align-items: center;
@@ -234,17 +230,17 @@ html[data-theme="light"] .moon-icon {
   content: "";
   flex: 1;
   height: 3px;
-  background: #444; /* Adjust color for visibility */
+  background: #444; 
 }
 
 .heading-box {
   padding: 5px 15px;
-  background: #1a1a2e; /* Dark background */
-  color: #ccc; /* Text color */
-  border-radius: 8px; /* Rounded corners */
+  background: #1a1a2e; 
+  color: #ccc; 
+  border-radius: 8px; 
   font-size: 20px;
   font-weight: 500;
-  border: 1px solid #444; /* Border for the box */
+  border: 1px solid #444; 
   margin: 115px 10px;
 }
 
@@ -295,6 +291,7 @@ html[data-theme="light"] .moon-icon {
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-decoration: none;
 }
 
 
@@ -467,17 +464,17 @@ html[data-theme="light"] .moon-icon {
 
 
 .videos {
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
   padding: 20px 30px;
   border-radius: 12px;
   box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
+  max-width: 900px;
   width: 90%;
   align-items: center;
   text-align: center;
   justify-content: center;
   text-decoration: none;
-  margin:  auto;
+  margin: 10rem auto;
 }
 
 .Video {
@@ -517,18 +514,18 @@ html[data-theme="light"] .moon-icon {
 }
 
 .video-list li:hover {
-  background-color: #f1f5f9; /* Light grey hover effect */
+  background-color: #f1f5f9; 
 }
 
 .video-title {
   font-size: 16px;
-  color: #1e293b; /* Darker grey text */
+  color: #1e293b;
   text-decoration: none;
 }
 
 .video-time {
   font-size: 14px;
-  color: #64748b; /* Muted grey */
+  color: #64748b;
 }
 
 .view-all {
@@ -538,8 +535,8 @@ html[data-theme="light"] .moon-icon {
 
 .view-all a {
   text-decoration: none;
-  background-color: #000000; /* Black button */
-  color: #ffffff; /* White text */
+  background-color: #000000; 
+  color: #ffffff; 
   padding: 12px 20px;
   border-radius: 8px;
   font-size: 14px;
@@ -549,7 +546,7 @@ html[data-theme="light"] .moon-icon {
 }
 
 .view-all a:hover {
-  background-color: #1e293b; /* Dark grey */
+  background-color: #1e293b;
   box-shadow: 0 4px 8px rgba(30, 41, 59, 0.4);
 }
 :root {
@@ -826,7 +823,7 @@ html[data-theme="light"] .moon-icon {
   }
 
   .grid {
-    grid-template-columns: repeat(2, 1fr); /* Set 3 columns */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 0.5rem;
     padding: 0.1rem;}
 
@@ -1327,11 +1324,11 @@ input:focus {
 }
 .c {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  flex-wrap: wrap; 
   background: var(--bg-secondary);
   padding: 20px;
   border-radius: 10px;
-  width: 90%; /* Adjust width for smaller screens */
+  width: 90%;
   max-width: 1200px;
   margin: 2rem auto;
 }
@@ -1398,10 +1395,10 @@ input:focus {
 
 .skills {
   display: flex;
-  flex-wrap: wrap; /* Enables wrapping on smaller screens */
+  flex-wrap: wrap; 
   align-items: center;
   justify-content: center;
-  gap: 15px; /* Added gap for better spacing */
+  gap: 15px;
 }
 
 .column {
@@ -1419,7 +1416,7 @@ input:focus {
   border: 1px solid #e1e1e1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #000;
-  text-align: center; /* Center content */
+  text-align: center; 
 }
 
 .dotted-lines {
@@ -1446,7 +1443,7 @@ input:focus {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   max-width: 800px;
   margin: 0 auto;
@@ -1482,30 +1479,29 @@ input:focus {
   color: #555;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
   .c {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     padding: 10px;
   }
 
   .con, .roa {
     flex: 1;
     padding: 10px 0;
-    text-align: center; /* Center align for smaller screens */
+    text-align: center; 
   }
 
   .skills {
-    flex-direction: column; /* Stack skills in a column */
+    flex-direction: column;
     gap: 20px;
   }
 
   .skill-box {
-    width: 100%; /* Make skill boxes full width */
+    width: 100%; 
   }
 
   .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust columns for smaller screens */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
   }
 }
@@ -1534,7 +1530,7 @@ input:focus {
 
 @media (max-width: 480px) {
   .c {
-    width: 90%; /* Further reduce width for smaller screens */
+    width: 90%; 
   }
 
   .rr {
@@ -1648,4 +1644,333 @@ input:focus {
   .portal-btn {
       width: 100%;
   }
+}
+
+.pantheon {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.zeus {
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #646cff, #9089fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.hermes {
+  color: #94a3b8;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Search section */
+.oracle {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prophecy {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #2a2a2a;
+  border-radius: 12px;
+  background-color:var(--bg-primary);
+  color:var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.prophecy:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.2);
+}
+
+.apollo {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #646cff 0%, #9089fc 100%);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.apollo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.3);
+}
+
+/* Category filters */
+.titans {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.atlas {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #2a2a2a;
+  border-radius: 12px;
+  background-color: var(--bg-primary);
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.atlas:hover {
+  border-color: #646cff;
+  color: white;
+}
+
+.atlas.selected {
+  background: linear-gradient(135deg, #646cff 0%, #9089fc 100%);
+  border-color: transparent;
+  color: white;
+}
+
+/* Course grid */
+.elysium {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.chimera {
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.chimera::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+  border-radius: inherit;
+  z-index: 0;
+}
+
+.chimera:hover {
+  transform: translateY(-8px);
+}
+
+.chimera.forest-theme {
+  background: linear-gradient(135deg, #1a472a 0%, #2d6a4f 100%);
+}
+
+.chimera.galaxy-theme {
+  background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 100%);
+}
+
+.chimera.ocean-theme {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+}
+
+.pegasus {
+  position: absolute;
+  top: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+}
+
+.griffin {
+  left: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.phoenix {
+  right: 1.5rem;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.medusa {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 3rem 0 1rem;
+  position: relative;
+  color: white;
+}
+
+.siren {
+  color:white;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  position: relative;
+}
+
+.hydra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.kraken {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.minotaur {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+
+.minotaur::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.minotaur:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.minotaur:hover::before {
+  opacity: 1;
+}
+
+.minotaur-text {
+  position: relative;
+  z-index: 1;
+}
+
+.minotaur-arrow {
+  position: relative;
+  z-index: 1;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.minotaur:hover .minotaur-arrow {
+  transform: translateX(4px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .zeus {
+    font-size: 3rem;
+  }
+
+  .oracle {
+    flex-direction: column;
+  }
+
+  .apollo {
+    width: 100%;
+  }
+
+  .elysium {
+    grid-template-columns: 1fr;
+  }
+
+  .titans {
+    gap: 0.5rem;
+  }
+
+  .atlas {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+.forest-theme {
+  background-color: #228B22; 
+  color: white;
+}
+
+.galaxy-theme {
+  background-color: #4B0082;
+  color: white;
+}
+
+.ocean-theme {
+  background-color: #1E90FF;
+  color: white;
+}
+
+.desert-theme {
+  background-color: #DAA520;
+  color: white;
+}
+
+.space-theme {
+  background-color: #00008B; 
+  color: white;
+}
+
+.cloud-theme {
+  background-color: #87CEFA; 
+  color: black;
+}
+
+.cyber-theme {
+  background-color: #32CD32; 
+  color: black;
+}
+
+.matrix-theme {
+  background-color: #0A0A0A; 
+  color: lime;
+}
+
+.techno-theme {
+  background-color: #FF6347; 
+  color: white;
 }

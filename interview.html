@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Resources</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
     <div class="app">
         <header>
           <div class="container">
@@ -29,7 +29,6 @@
                       </svg>
                     </a>
                   </div>
-                  
                 
                 <!-- Navigation -->
                 <nav class="main-nav">
@@ -68,52 +67,87 @@
             </div>
           </div>
         </header>
-    <div class="logpage">
-        <div class="login-box">
-            <h1 class="logi">Login</h1>
-            <p class="subtit">Welcome back! Let's take you to your account.</p>
-            
-            <div class="social-buttons">
-                <button class="social-btn github">
-                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
-                    Continue with GitHub
-                </button>
-                <button class="social-btn google">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google">
-                    Continue with Google
-                </button>
-                <button class="social-btn linkedin">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
-                    Continue with LinkedIn
-                </button>
-            </div>
-
-            <div class="divider">
-                <span>OR</span>
-            </div>
-
-            <form id="loginForm">
-                <div class="input-group">
-                    <input type="email" id="email" placeholder="Email Address" required>
-                </div>
-                <div class="input-group">
-                    <input type="password" id="password" placeholder="Password" required>
-                </div>
-                <a href="#" class="forgot-password" onclick="navigateToPage('reset-password.html')">Reset your password?</a>
-                <button type="submit" class="login-btn">Continue</button>
-            </form>
-
-            <p class="signup-link">
-                Don't have an account? <a href="#" onclick="navigateToPage('signup.html')">Sign up</a>
-            </p>
-
-            <p class="terms">
-                By continuing to use our services, you acknowledge that you have both read and agree to our 
-                <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
-            </p>
+    <div class="olympus">
+      <div class="pantheon">
+        <h1 class="zeus">Interview Resources</h1>
+        <p class="hermes">Enhance your interview skills with our curated content</p>
+        
+        <div class="oracle">
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Discover your next learning adventure..."
+            class="prophecy"
+          >
+          <button class="apollo" onclick="handleSearch()">Explore</button>
         </div>
-    </div>
 
-    <script src="script.js"></script>
-</body>
+        <div class="titans">
+            <button class="atlas" data-filter="all">All</button>
+            <button class="atlas" data-filter="frontend">Frontend</button>
+            <button class="atlas" data-filter="system">System</button>
+            <button class="atlas" data-filter="backend">Backend</button>
+            <button class="atlas" data-filter="data-science">Data Science</button>
+            <button class="atlas" data-filter="cloud">Cloud</button>
+            <button class="atlas" data-filter="machine-learning">Machine Learning</button>
+            <button class="atlas" data-filter="devops">DevOps</button>
+            <button class="atlas" data-filter="cybersecurity">Cybersecurity</button>
+          </div>
+          
+
+        <div class="elysium" id="coursesContainer">
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-top">
+          <nav class="nav-links">
+            <a href="#">Roadmaps</a>
+            <a href="#">Best Practices</a>
+            <a href="#">Guides</a>
+            <a href="#">Videos</a>
+            <a href="#">FAQs</a>
+            <a href="#">YouTube</a>
+          </nav>
+        </div>
+    
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="brand">
+              <div class="logo-container">
+                <a href="#" class="logo-text">roadmap.sh</a>
+                <span class="by-text">by</span>
+                <a href="#" class="author-tag">@Naman Jain</a>
+              </div>
+              <p class="description">
+                Community created roadmaps, best practices, projects, articles, resources and journeys to help you choose your path and grow in your career.
+              </p>
+            </div>
+          </div>
+    
+          <div class="footer-section">
+            <div class="links-container">
+              <a href="#">DevOps</a>
+              <a href="#">Kubernetes</a>
+              <a href="#">Cloud-Native</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <div class="footer-info">
+            <span>© roadmap.sh</span>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Advertise</a>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link">Email</a>
+            <a href="#" class="social-link">Github</a>
+            <a href="#" class="social-link">Linkedin</a>
+          </div>
+        </div>
+      </footer>
+    <script type="module" src="/script.js"></script>
+  </body>
 </html>
